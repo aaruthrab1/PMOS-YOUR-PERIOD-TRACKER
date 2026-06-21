@@ -1,0 +1,356 @@
+/**
+ * Cyra Design System — Premium healthcare aesthetic
+ * Light: clinical neutrals · Dark: premium layered (#0B0D12 base)
+ */
+
+:root {
+  color-scheme: light;
+
+  /* ─── Brand / Interaction (Violet) ───────────────────────────────────── */
+  --color-brand-50: #f5f3ff;
+  --color-brand-100: #ede9fe;
+  --color-brand-200: #ddd6fe;
+  --color-brand-300: #c4b5fd;
+  --color-brand-400: #7c6fe0;
+  --color-brand-500: #5b4bdb;
+  --color-brand-600: #4f46e5;
+  --color-brand-700: #4338ca;
+  --color-brand-800: #3730a3;
+  --color-brand-900: #312e81;
+  --color-brand-950: #1e1b4b;
+  --color-brand-50-rgb: 245 243 255;
+  --color-brand-100-rgb: 237 233 254;
+  --color-brand-200-rgb: 221 214 254;
+  --color-brand-300-rgb: 196 181 253;
+  --color-brand-400-rgb: 124 111 224;
+  --color-brand-500-rgb: 91 75 219;
+  --color-brand-600-rgb: 79 70 229;
+  --color-brand-700-rgb: 67 56 202;
+  --color-brand-800-rgb: 55 48 163;
+  --color-brand-900-rgb: 49 46 129;
+  --color-brand-950-rgb: 30 27 75;
+
+  /* ─── Cycle (Pink) — menstrual markers only ─────────────────────────── */
+  --color-cycle-50: #fdf2f8;
+  --color-cycle-100: #fce7f3;
+  --color-cycle-200: #fbcfe8;
+  --color-cycle-300: #f9a8d4;
+  --color-cycle-400: #f472b6;
+  --color-cycle-500: #ec4899;
+  --color-cycle-600: #db2777;
+  --color-cycle-700: #be185d;
+  --color-cycle-800: #9d174d;
+  --color-cycle-900: #831843;
+  --color-cycle-50-rgb: 253 242 248;
+  --color-cycle-100-rgb: 252 231 243;
+  --color-cycle-200-rgb: 251 207 232;
+  --color-cycle-300-rgb: 249 168 212;
+  --color-cycle-400-rgb: 244 114 182;
+  --color-cycle-500-rgb: 236 72 153;
+  --color-cycle-600-rgb: 219 39 119;
+  --color-cycle-700-rgb: 190 24 93;
+  --color-cycle-800-rgb: 157 23 77;
+  --color-cycle-900-rgb: 131 24 67;
+
+  /* ─── Risk — health assessments only ─────────────────────────────────── */
+  --color-risk-low: #059669;
+  --color-risk-low-bg: #ecfdf5;
+  --color-risk-low-border: #a7f3d0;
+  --color-risk-moderate: #d97706;
+  --color-risk-moderate-bg: #fffbeb;
+  --color-risk-moderate-border: #fde68a;
+  --color-risk-high: #dc2626;
+  --color-risk-high-bg: #fef2f2;
+  --color-risk-high-border: #fecaca;
+  --color-risk-low-rgb: 5 150 105;
+  --color-risk-low-bg-rgb: 236 253 245;
+  --color-risk-low-border-rgb: 167 243 208;
+  --color-risk-moderate-rgb: 217 119 6;
+  --color-risk-moderate-bg-rgb: 255 251 235;
+  --color-risk-moderate-border-rgb: 253 230 138;
+  --color-risk-high-rgb: 220 38 38;
+  --color-risk-high-bg-rgb: 254 242 242;
+  --color-risk-high-border-rgb: 254 202 202;
+
+  /* ─── Neutrals ──────────────────────────────────────────────────────── */
+  --color-ink: #111827;
+  --color-ink-secondary: #374151;
+  --color-ink-tertiary: #6b7280;
+  --color-ink-muted: #6b7280;
+  --color-ink-inverse: #ffffff;
+
+  /* ─── Surfaces ──────────────────────────────────────────────────────── */
+  --color-surface: #ffffff;
+  --color-surface-secondary: #f8f7fa;
+  --color-surface-tertiary: #f3f4f6;
+  --color-surface-elevated: #ffffff;
+  --color-surface-overlay: rgba(17, 24, 39, 0.4);
+  --color-surface-rgb: 255 255 255;
+  --color-surface-secondary-rgb: 248 247 250;
+  --color-surface-tertiary-rgb: 243 244 246;
+  --color-surface-elevated-rgb: 255 255 255;
+
+  /* ─── Borders ───────────────────────────────────────────────────────── */
+  --color-border: #e5e7eb;
+  --color-border-strong: #d1d5db;
+  --color-border-focus: var(--color-brand-500);
+
+  /* ─── Semantic shortcuts ──────────────────────────────────────────────── */
+  --color-interactive: var(--color-brand-500);
+  --color-interactive-hover: var(--color-brand-600);
+  --color-interactive-active: var(--color-brand-700);
+  --color-interactive-subtle: var(--color-brand-50);
+  --color-cycle-accent: var(--color-cycle-500);
+  --color-cycle-subtle: var(--color-cycle-50);
+
+  /* ─── Typography ─────────────────────────────────────────────────────── */
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Plus Jakarta Sans', var(--font-sans);
+
+  --text-display-xl-size: 2.25rem;
+  --text-display-xl-lh: 1.15;
+  --text-display-xl-ls: -0.025em;
+  --text-display-xl-weight: 600;
+
+  --text-display-lg-size: 1.875rem;
+  --text-display-lg-lh: 1.2;
+  --text-display-lg-ls: -0.02em;
+  --text-display-lg-weight: 600;
+
+  --text-display-md-size: 1.625rem;
+  --text-display-md-lh: 1.22;
+  --text-display-md-ls: -0.018em;
+  --text-display-md-weight: 600;
+
+  --text-display-sm-size: 1.375rem;
+  --text-display-sm-lh: 1.3;
+  --text-display-sm-ls: -0.015em;
+  --text-display-sm-weight: 600;
+
+  --text-title-lg-size: 1.125rem;
+  --text-title-lg-lh: 1.35;
+  --text-title-lg-weight: 600;
+
+  --text-title-size: 1.0625rem;
+  --text-title-lh: 1.4;
+  --text-title-weight: 600;
+
+  --text-title-sm-size: 0.9375rem;
+  --text-title-sm-lh: 1.45;
+  --text-title-sm-weight: 600;
+
+  --text-body-lg-size: 1rem;
+  --text-body-lg-lh: 1.65;
+  --text-body-lg-weight: 400;
+
+  --text-body-size: 0.9375rem;
+  --text-body-lh: 1.6;
+  --text-body-weight: 400;
+
+  --text-body-sm-size: 0.875rem;
+  --text-body-sm-lh: 1.55;
+  --text-body-sm-weight: 400;
+
+  --text-caption-size: 0.8125rem;
+  --text-caption-lh: 1.5;
+  --text-caption-weight: 400;
+
+  --text-micro-size: 0.75rem;
+  --text-micro-lh: 1.45;
+  --text-micro-ls: 0.01em;
+  --text-micro-weight: 500;
+
+  --text-overline-size: 0.6875rem;
+  --text-overline-lh: 1.35;
+  --text-overline-ls: 0.06em;
+  --text-overline-weight: 600;
+
+  /* ─── Spacing ─────────────────────────────────────────────────────────── */
+  --space-page-x: 1.5rem;
+  --space-page-y: 2rem;
+  --space-nav-height: 5rem;
+  --space-safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  /* ─── Radius ──────────────────────────────────────────────────────────── */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.125rem;
+  --radius-3xl: 1.25rem;
+  --radius-4xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* ─── Elevation ───────────────────────────────────────────────────────── */
+  --shadow-0: none;
+  --shadow-1: 0 1px 2px rgba(17, 24, 39, 0.04);
+  --shadow-2: 0 1px 3px rgba(17, 24, 39, 0.06);
+  --shadow-3: 0 2px 8px rgba(17, 24, 39, 0.06);
+  --shadow-4: 0 4px 12px rgba(17, 24, 39, 0.08);
+  --shadow-5: 0 8px 24px rgba(17, 24, 39, 0.1);
+  --shadow-brand-glow: 0 8px 32px rgba(91, 75, 219, 0.22);
+  --shadow-cycle-glow: 0 8px 28px rgba(236, 72, 153, 0.16);
+  --shadow-nav: 0 -1px 0 var(--color-border);
+
+  /* ─── Motion ──────────────────────────────────────────────────────────── */
+  --duration-instant: 100ms;
+  --duration-fast: 150ms;
+  --duration-normal: 200ms;
+  --duration-slow: 300ms;
+  --duration-slower: 450ms;
+  --ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.2, 0.64, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+
+  /* ─── Charts ──────────────────────────────────────────────────────────── */
+  --chart-grid: var(--color-border);
+  --chart-axis: var(--color-ink-muted);
+  --chart-tooltip-bg: var(--color-surface);
+  --chart-tooltip-border: var(--color-border);
+  --chart-brand: var(--color-brand-500);
+  --chart-brand-fill: rgba(91, 75, 219, 0.08);
+  --chart-cycle: var(--color-cycle-500);
+  --chart-cycle-fill: rgba(236, 72, 153, 0.08);
+  --chart-neutral: var(--color-ink-tertiary);
+  --chart-risk-low: var(--color-risk-low);
+  --chart-risk-moderate: var(--color-risk-moderate);
+  --chart-risk-high: var(--color-risk-high);
+
+  /* ─── Z-index ─────────────────────────────────────────────────────────── */
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-nav: 300;
+  --z-overlay: 400;
+  --z-modal: 500;
+  --z-toast: 600;
+}
+
+/**
+ * Dark mode — Premium clinical palette
+ * Background #0B0D12 · Surface #121621 · Elevated #1B2230
+ * Text #F8FAFC · Secondary #94A3B8 · Primary #7C6BFF
+ * Depth via surface layering — no glows, no neon, no colored shadows
+ * WCAG AA: primary text ≥ 7:1 · secondary ≥ 4.5:1 on surface
+ */
+.dark {
+  color-scheme: dark;
+
+  /* Brand — refined violet accent */
+  --color-brand-50: #161528;
+  --color-brand-100: #1C1933;
+  --color-brand-200: #2A2650;
+  --color-brand-300: #5248A8;
+  --color-brand-400: #9185FF;
+  --color-brand-500: #7C6BFF;
+  --color-brand-600: #9185FF;
+  --color-brand-700: #A99FFF;
+  --color-brand-800: #C4BBFF;
+  --color-brand-900: #DDD8FF;
+  --color-brand-950: #F0EDFF;
+  --color-brand-50-rgb: 22 21 40;
+  --color-brand-100-rgb: 28 25 51;
+  --color-brand-200-rgb: 42 38 80;
+  --color-brand-300-rgb: 82 72 168;
+  --color-brand-400-rgb: 145 133 255;
+  --color-brand-500-rgb: 124 107 255;
+  --color-brand-600-rgb: 145 133 255;
+  --color-brand-700-rgb: 169 159 255;
+  --color-brand-800-rgb: 196 187 255;
+  --color-brand-900-rgb: 221 216 255;
+  --color-brand-950-rgb: 240 237 255;
+
+  /* Cycle — muted mauve for menstrual markers only, never card fills */
+  --color-cycle-50: #161219;
+  --color-cycle-100: #1E1820;
+  --color-cycle-200: #2D2430;
+  --color-cycle-300: #4A3845;
+  --color-cycle-400: #A87888;
+  --color-cycle-500: #B8939F;
+  --color-cycle-600: #C9A8B2;
+  --color-cycle-700: #D9BEC5;
+  --color-cycle-800: #E8D3D8;
+  --color-cycle-900: #F5E8EB;
+  --color-cycle-50-rgb: 22 18 25;
+  --color-cycle-100-rgb: 30 24 32;
+  --color-cycle-200-rgb: 45 36 48;
+  --color-cycle-300-rgb: 74 56 69;
+  --color-cycle-400-rgb: 168 120 136;
+  --color-cycle-500-rgb: 184 147 159;
+  --color-cycle-600-rgb: 201 168 178;
+  --color-cycle-700-rgb: 217 190 197;
+  --color-cycle-800-rgb: 232 211 216;
+  --color-cycle-900-rgb: 245 232 235;
+
+  /* Risk — restrained clinical tones */
+  --color-risk-low: #34D399;
+  --color-risk-low-bg: #0F1F18;
+  --color-risk-low-border: #1A3D30;
+  --color-risk-moderate: #FBBF24;
+  --color-risk-moderate-bg: #1F1A0F;
+  --color-risk-moderate-border: #3D3218;
+  --color-risk-high: #F87171;
+  --color-risk-high-bg: #1F1212;
+  --color-risk-high-border: #3D2020;
+  --color-risk-low-rgb: 52 211 153;
+  --color-risk-low-bg-rgb: 15 31 24;
+  --color-risk-low-border-rgb: 26 61 48;
+  --color-risk-moderate-rgb: 251 191 36;
+  --color-risk-moderate-bg-rgb: 31 26 15;
+  --color-risk-moderate-border-rgb: 61 50 24;
+  --color-risk-high-rgb: 248 113 113;
+  --color-risk-high-bg-rgb: 31 18 18;
+  --color-risk-high-border-rgb: 61 32 32;
+
+  /* Text */
+  --color-ink: #F8FAFC;
+  --color-ink-secondary: #94A3B8;
+  --color-ink-tertiary: #78889A;
+  --color-ink-muted: #78889A;
+  --color-ink-inverse: #0B0D12;
+
+  /* Surfaces — layered depth */
+  --color-surface: #121621;
+  --color-surface-secondary: #0B0D12;
+  --color-surface-tertiary: #161B26;
+  --color-surface-elevated: #1B2230;
+  --color-surface-overlay: rgba(0, 0, 0, 0.72);
+  --color-surface-rgb: 18 22 33;
+  --color-surface-secondary-rgb: 11 13 18;
+  --color-surface-tertiary-rgb: 22 27 38;
+  --color-surface-elevated-rgb: 27 34 48;
+
+  /* Borders */
+  --color-border: #1E2533;
+  --color-border-strong: #283040;
+  --color-border-focus: #7C6BFF;
+
+  --color-interactive: var(--color-brand-500);
+  --color-interactive-hover: var(--color-brand-600);
+  --color-interactive-active: var(--color-brand-400);
+  --color-interactive-subtle: var(--color-brand-50);
+  --color-cycle-accent: var(--color-cycle-500);
+  --color-cycle-subtle: var(--color-surface-tertiary);
+
+  /* Elevation — neutral depth only */
+  --shadow-0: none;
+  --shadow-1: 0 1px 0 rgba(255, 255, 255, 0.04) inset;
+  --shadow-2: 0 0 0 1px rgba(255, 255, 255, 0.03);
+  --shadow-3: 0 8px 24px rgba(0, 0, 0, 0.32);
+  --shadow-4: 0 12px 32px rgba(0, 0, 0, 0.38);
+  --shadow-5: 0 16px 48px rgba(0, 0, 0, 0.44);
+  --shadow-brand-glow: 0 8px 32px rgba(91, 75, 219, 0.22);
+  --shadow-cycle-glow: 0 8px 28px rgba(236, 72, 153, 0.16);
+  --shadow-nav: 0 -1px 0 var(--color-border);
+
+  /* Charts */
+  --chart-grid: var(--color-border);
+  --chart-axis: var(--color-ink-muted);
+  --chart-tooltip-bg: var(--color-surface-elevated);
+  --chart-tooltip-border: var(--color-border-strong);
+  --chart-brand: var(--color-brand-500);
+  --chart-brand-fill: rgba(124, 107, 255, 0.12);
+  --chart-cycle: var(--color-cycle-500);
+  --chart-cycle-fill: rgba(184, 147, 159, 0.1);
+  --chart-neutral: var(--color-ink-tertiary);
+}

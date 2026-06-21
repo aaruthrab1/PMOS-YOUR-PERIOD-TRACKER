@@ -1,0 +1,9 @@
+{
+  "project_id": "cyra",
+  "api": {
+    "port": 54321
+  },
+  "db": {
+    "port": 54322
+  }
+}
